@@ -1,0 +1,129 @@
+/* Custom CSS for demo 1*/
+
+footer                  {background-color:  #03202a; color:#fff; }
+img {  max-width: 640px;  height: auto;  }  
+main {display: flex; flex-direction: column;}
+.txt-container {margin-top: 55vh;}
+
+/* footer  */
+.footer {
+    background-color: #003d52; 
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 50px;
+    margin-top: 50px;
+  }
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+  
+/* footer left*/
+.footer .footer-left {
+    width: 33%;
+    padding-right: 15px;
+}
+.footer .icons {margin-top: 25px;}
+.footer .icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #444;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+  
+/* footer center*/
+.footer .footer-center {width: 30%;}
+.footer .footer-center i {
+    background-color: #444;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+.footer .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+.footer .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+.footer .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+.footer .footer-center p a {
+    color: #65aede;
+    text-decoration: none;
+}
+
+/* footer right*/
+.footer .footer-right {width: 35%;}
+.footer .name {
+    color: #65aede;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .footer {
+        font-size: 14px;
+    }
+    .footer .footer-left,
+    .footer .footer-center,
+    .footer .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer .footer-center i {
+        margin-left: 0;
+    }
+}
+
+
+/* --------------------------------- */
+/* Media Queries                     */
+/* --------------------------------- */
+
+/*----- Extra-Small devices (portrait phones, less than 576px) ----- */
+@media (max-width: 575px) { 
+    .footer-col { margin: 10px}
+ }
+
+/*----- Small devices (landscape phones, 576px up to 767px) ----- */
+@media (max-width: 767px) {  }
+
+/*----- Medium devices (tablets, 769px up to 991 px) ----- */ 
+@media (max-width: 991px) {  }
+
+/*----- Large devices (desktops, 992px to up 1199px) ----- */
+@media (max-width: 1199px) {  }
+
+/*----- X-Large devices (large desktops, 1200px up to 1400px) ----- */ 
+@media (max-width: 1400px) {  
+    #for-schools input{min-width: 80%;}
+}

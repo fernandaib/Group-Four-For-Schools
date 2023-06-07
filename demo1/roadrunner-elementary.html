@@ -3,45 +3,95 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Roadrunner Elemtary School</title>
+    <title>Demo 1 - Roadrunner Elemtary School</title>
     <link rel="stylesheet" href="css/for-schools-styling.css">
     <link rel="stylesheet" href="css/for-schools.css">
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">    
-        
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+    <!--Custon CSS file for demo1-->   
+    <link rel="stylesheet" href="css/demo1.css">
   </head>
 
-
   <body class="for-schools-body-slideshow">
-    <header class="header-for-schools">
-        <a href="#">
-            <img src="images/logo.svg" alt="logo" class="mainLogo-for-schools">  
+    <header class="header-for-schools text-center color-orange">
+        <a href="pages/demo1About.html">
+          <div>
+            <i class="fa-solid fa-feather fs-3 color-orange"></i>
+            <p class="color-orange ff-poppins text-center">Roadrunner Elementary</p>
+          </div>
+          <i class="fa-solid fa-feather fs-3 color-orange"></i>
         </a>            
 
         <nav class="navigation-for-schools">
             <input type="checkbox" class="toggleMenu-for-schools">
             <div class="hamburger-for-schools"></div>
 
-            <ul class="menu-for-schools">
-                <li><a href="pages/about.html">About</a></li>
+            <ul class="menu-for-schools ff-poppins">
+                <li><a href="pages/demo1About.html">About</a></li>
                 <li><a href="pages/atOurSchool.html">At Our School</a></li>
                 <li><a href="pages/families.html">Families</a></li>
                 <li><a href="pages/calendar.html">Calendar</a></li>
             </ul>
         </nav>
-    </header>      
-    <h1>Roadrunner Elementary</h1>
+    </header> 
+         
 
-
-
-
-
-    <script src="scripts/for-schools.js"></script>
-</body> 
-
-
-
+      <h1 class="for-schools-title-slideshow">Roadrunner Elementary</h1>
+      <section class="for-schools-slideshow">
+          <img src="images/pexels-pixabay-207684.jpg" alt="img 01">
+          <img src="images/pexels-element-digital-1370296.jpg" alt="img 02">
+          <img src="images/pexels-idriss-meliani-2982449.jpg" alt="img 03">                                                       
+      </section>
   <body>
+    <footer class="footer">
+      <div class="footer-left col-md-4 col-sm-6 text-center">
+          <div><i class="fa-solid fa-feather fs-3 color-orange"></i></div>
+          
+          <p class="color-white ff-poppins fs-3">Roadrunner Elementary</p>  
+  
+          <p class="name"> Roadrunner Elementary &copy; 2023</p>
+          <div class="icons">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+      </div>
+      <div class="footer-center col-md-4 col-sm-6">
+          <h2 class="font-bold">Contact </h2>
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span> 100 Roadrunner Road</span> San Diego, California</p>
+        </div>
+        <div>
+          <i class="fa fa-phone"></i>
+          <p> (858) 555 - 5555</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="#">RoadrunnerElementary@edu.com</a></p>
+        </div>
+      </div>
+
+      <div class="footer-right col-md-4 col-sm-6">
+          <h2 class="font-bold">Newsletter</h2>
+          <form action="" method="post" id="for-schools" class="for-schools-form">
+          <p class="my-3 pr-5">Sign Up to Our Newsletter to Get Latest Roadrunner News</p>                        
+          <!-- <label for="fullName">Name:</label> -->
+          <input type="text" id="fullName" name="full_name" placeholder="Name" class="mb-2">
+          <!-- <label for="email">Email:</label> -->
+          <input type="email" id="email" name="email" placeholder="Email Address">
+                                          
+          <div class="checks mt-2">
+              <input type="checkbox" id="copyEmail" name="copyEmail">
+              <span></span>
+              <label for="copyEmail">Send confirmation email </label>
+          </div>                        
+          <input type="submit" id="submit" value="submit" class="for-schools-btn-three bg-blue color-dark">
+          </form>
+      </div>
+  </footer>
 
     <script src="scripts/for-schools.js"></script>
   </body>
