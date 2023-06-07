@@ -1,8 +1,7 @@
 /* custom css demo 2 */
-
 .jumbotron-bg-inner-for-schools {display: block; background-color: rgba(0, 0, 0, 0.2);}
 
-footer                  {background-color:  #03202a; color:#fff; }
+footer    {background-color:  #03202a; color:#fff; }
 img {  max-width: 640px;  height: auto;  }  
 main {display: flex; flex-direction: column;}
 .txt-container {margin-top: 55vh;}
