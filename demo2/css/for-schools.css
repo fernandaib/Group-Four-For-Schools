@@ -366,7 +366,7 @@ input[type="radio"]:checked ~ span:before {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('../image/jumbotronImg.jpg'); 
+  background-image: url(../image/jumbotronImg.jpg); 
   background-repeat: no-repeat;  
   background-position: center; 
   background-size: cover;
