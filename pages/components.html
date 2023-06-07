@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>4-S|Components</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+        <link rel="icon" type="image/ico" href="../images/favicon-32.png">
+        
+        <!--Responsive website -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- This is how we link to an external css file -->
+        
+        <!--EXTERNAL CSS -->
+        <link rel="stylesheet" href="../css/reset.css"> 
+        
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> 
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Acme&family=Figtree:wght@400;800&family=Source+Code+Pro:wght@400;800&display=swap" rel="stylesheet">
+        
+        <!--EXTERNAL CSS -->        
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/prism.css">
+
+        <!-- For Schools framework -->
+        <link rel="stylesheet" href="../css/for-schools.css">
+
+        <link rel="stylesheet" href="../css/for-schools-styling.css">     
+        
+              
+                      
+                               
+    </head>
+    
+    <body id="page-top">
+        <header class="header">
+
+            <a href="../index.html">
+                <img src="../images/logoWhite.svg" alt="logo" class="mainLogo">                
+            </a>
+
+            <nav class="navigation">
+                <input type="checkbox" class="toggleMenu">
+                <div class="hamburger"></div>
+
+                <ul class="menu">
+                    <li><a href="../index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                    <li><a href="intro.html"><i class="fa-solid fa-flag-checkered"></i>Start</a></li>
+                    <li><a href="styling.html"><i class="fa-solid fa-paintbrush"></i>Styling</a></li>
+                    <li><i class="fa-solid fa-puzzle-piece"></i>Components</li>
+                    <li><a href="demo.html"><i class="fa-solid fa-laptop-code"></i>Demo</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <aside>
+
+                      
+            <section class="aside-text" id="aside-menu">                
+                <h2>Components</h2>                
+                <ul class="aside-list">
+                    <li><span class="list-title">CSS</span></li>
+                    <li><a href="#comp-css-01">Navigation</a></li>
+                    <li><a href="#comp-css-02">Jumbotron</a></li>
+                    <li><a href="#comp-css-03">Modal Pop-Up</a></li>
+                    
+                    <li><span class="list-title">JS</span></li>
+                    
+                    <li><a href="#comp-js-01">Slide</a></li>
+                    <li><a href="#comp-js-02"></a>Calendar</li>
+                                    
+                    
+                </ul>                    
+            </section>  
+            
+            <div class="aside-hide" onclick="myFunction()">
+                <i class="fa-solid fa-caret-right" id="open"></i> 
+                <i class="fa-solid fa-caret-left" id="close"></i>
+            </div>
+                   
+            
+        </aside>
+
+        <main class="main-framework" >
+            
+            <article class="article-01">
+                <h2>Components</h2>
+<!--------------- Navigation --------------->
+                <section id="comp-css-01">
+                    <h3>CSS Component: <em class="highlight">Navigation</em></h3>
+                    <p>It is made up by brand logo and menu items. Brand logo can be svg, png, or text file.</p> 
+                    
+                    <section class="sample">
+                        <header class="header-sample">
+                            <a href="#">
+                                <img src="../images/logo.svg" alt="logo" class="mainLogo-sample">  
+                            </a>            
+                
+                            <nav class="navigation-sample">
+                                <input type="checkbox" class="toggleMenu-sample">
+                                <div class="hamburger-sample"></div>
+                
+                                <ul class="menu-sample">
+                                    <li><a href="#">Item 01</a></li>
+                                    <li><a href="#">Item 02</a></li>
+                                    <li><a href="#">Item 03</a></li>
+                                    <li><a href="#">Item 04</a></li>
+                                </ul>
+                            </nav>
+                        </header>
+                    </section>
+                    
+                    <pre>
+                        <code class="language-html">
+&lt;body class="for-schools-body-slideshow"&gt;
+    &lt;header class="header-for-schools"&gt;
+        &lt;a href="#"&gt;
+            &lt;img src="images/logo.svg" alt="logo" class="mainLogo-for-schools"&gt;  
+        &lt;/a&gt;            
+
+        &lt;nav class="navigation-for-schools"&gt;
+            &lt;input type="checkbox" class="toggleMenu-for-schools"&gt;
+            &lt;div class="hamburger-for-schools"&gt;&lt;/div&gt;
+
+            &lt;ul class="menu-for-schools"&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Item 01&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Item 02&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Item 03&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Item 04&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;      
+&lt;/body&gt;                                                                                     
+                        </code>
+                    </pre>
+                </section>
+<!--------------- Jumbotron --------------->
+                <section id="comp-css-02">
+                    <h3>CSS Component: <em class="highlight">Jumbotron</em></h3>
+                    <p>It is a component for showcasing hero content.</p>   
+<!--------------- Jumbotron NO bg photo --------------->                    
+                    <h3><i class="fa-solid fa-angles-right"></i>Jumbotron without background image</h3>
+                    <p>After following instructions described in <span class="text-bold">Start</span> section, notice that these classes must be taken into account:
+                        <span class="utility-code color-pink">jumbotron-for-schools</span>,
+                        <span class="utility-code color-pink">jumbotron-inner-for-schools</span>,
+                        <span class="utility-code color-pink">jumbotron-btn-for-schools</span>,
+                        to build a Jumbotron.
+                    </p>
+                    <br>
+                    <p>The next illustration shows how to would look a Jumbotron <span class="text-bold">without</span> any <span class="text-bold">background image</span>.</p>
+                    
+                    
+
+                    <section class="sample">
+                        <section class="jumbotron-for-schools">
+                            <section class="jumbotron-inner-for-schools">
+                                <h2>Jumbotron</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis nam ipsa iure accusantium modi debitis, eum distinctio voluptatem quam ratione fugit expedita quos unde eaque iusto! Quas voluptatum in numquam?</p>
+                                <section class="jumbotron-btn-for-schools">
+                                    <button class="btn-one-for-schools">Learn More</button>
+                                    <button class="btn-two-for-schools">Download</button>
+                                </section>
+                            </section>
+                        </section>
+
+                    </section>
+                    
+                    <pre>
+                        <code class="language-html">
+&lt;body&gt;
+    &lt;main class="jumbotron-for-schools"&gt;
+        &lt;section class="jumbotron-inner-for-schools"&gt;
+            &lt;h2&gt;Jumbotron&lt;/h2&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis nam ipsa iure accusantium modi debitis, eum distinctio voluptatem quam ratione fugit expedita quos unde eaque iusto! Quas voluptatum in numquam?&lt;/p&gt;
+            &lt;section class="jumbotron-btn-for-schools"&gt;
+                &lt;button class="btn-one-for-schools"&gt;Learn More&lt;/button&gt;
+                &lt;button class="btn-two-for-schools"&gt;Download&lt;/button&gt;
+            &lt;/section&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;    
+&lt;/body&gt;                        
+                        </code>
+                    </pre> 
+<!--------------- Jumbotron with bg photo --------------->                        
+                    <h3><i class="fa-solid fa-angles-right"></i>Jumbotron with background image</h3>
+
+                    <p>Take into account that these classes:
+                        <span class="utility-code color-pink">jumbotron-bg-for-schools</span>,
+                        <span class="utility-code color-pink">jumbotron-bg-inner-for-schools</span>,                        
+                         to build a Jumbotron with background image.</p>
+                    <br>
+                    <p><i class="fa-solid fa-triangle-exclamation"></i> <span class="text-bold">Warning:</span> In order to set the <code class="code-template">JPG-format</code> background image, it must be named <code class="code-template">jumbotronImg</code>, it means <code class="code-template">jumbotronImg.jpg</code>. It must be stored inside <code class="code-template">images</code> file.</p>
+                    <br>
+                    <p>The next illustration shows how would look a Jumbotron <span class="text-bold">with</span> a <span class="text-bold">background image</span>.</p>
+                    <br>
+                    <p></p>
+
+                    <section class="sample">
+                        <section class="jumbotron-bg-for-schools">
+                            <section class="jumbotron-bg-inner-for-schools">
+                                <h2>Jumbotron</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis nam ipsa iure accusantium modi debitis, eum distinctio voluptatem quam ratione fugit expedita quos unde eaque iusto! Quas voluptatum in numquam?</p>
+                                <section class="jumbotron-btn-for-schools">
+                                    <button class="btn-one-for-schools">Learn More</button>
+                                    <button class="btn-two-for-schools">Download</button>
+                                </section>
+                            </section>
+                        </section>
+
+                    </section>
+                    <pre>
+                        <code class="language-html">
+
+&lt;body&gt;
+    &lt;main class="jumbotron-bg-for-schools"&gt;
+        &lt;section class="jumbotron-bg-inner-for-schools"&gt;
+            &lt;h2&gt;Jumbotron&lt;/h2&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis nam ipsa iure accusantium modi debitis, eum distinctio voluptatem quam ratione fugit expedita quos unde eaque iusto! Quas voluptatum in numquam?&lt;/p&gt;
+            &lt;section class="jumbotron-btn-for-schools"&gt;
+                &lt;button class="btn-one-for-schools"&gt;Learn More&lt;/button&gt;
+                &lt;button class="btn-two-for-schools"&gt;Download&lt;/button&gt;
+            &lt;/section&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;   
+&lt;/body&gt;                                                               
+                        </code>
+                    </pre>
+                </section>
+<!--------------- Modal Pop-up --------------->   
+                <section id="comp-css-03">
+                    <h3>CSS Component: <em class="highlight">Modal Pop-up</em></h3>
+                    <p>Modal popups are used pretty frequently on the web. Some popular uses of them include driving newsletter sign ups, displaying notifications/alerts, and handling register and login forms. </p> 
+                    <br>
+                    <p>Our modal will be generic which means you will be free to use it for whatever purpose you'd like. The modal pop-up will be embedded in a typed link for users to click or a button.  </p>
+                        
+                    <section class="sample">
+                        <section class="modal-sample">
+                            <section class="modal-inner-sample">
+                                <div class="container">
+                                    <h2>Modal Pop-Up Text and Button</h2>
+                                    <div class="row">
+                                        <p>Write text and add a link that opens up as a modal pop-up.
+                                        <a href="#open-modal">Click Here</a> for more information.</p>
+                                    </div>
+                                    <div class="row my-5">
+                                        <div class="column col-12 text-center">
+                                            <button type="button" class="for-schools-btn-five bg-blue color-white"><a href="#open-modal-btn" class="color-white">Click</a></button>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            
+                                <!-- Hidden modal text link -->
+                                <div id="open-modal" class="modal-content">
+                                    <div class="container">
+                                        <a href="#modal-close" title="close" class="modal-close" data-bs-dismiss="modal" aria-label="close">X</a> 
+                                        <h2>Modal Headline</h2>
+                                        <p>Insert any text here in the paragraph tags to display in your modal pop-up.</p>  
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis libero alias id at aut minus magnam sapiente consequuntur! Veniam deserunt animi nisi ipsum. Itaque nisi pariatur ducimus aspernatur fugiat. Accusantium!
+                                        Explicabo eos velit sapiente sit vero. Illo consequatur alias facilis facere illum excepturi blanditiis, nihil a dolores quae eveniet atque labore accusantium error tenetur deserunt nam dicta quasi in! Quae? </p>                                 
+                                    </div>
+
+                                </div>
+
+                                <!-- Hidden modal button text -->
+                                <div id="open-modal-btn" class="modal-content">
+                                    <div class="container">
+                                        <a href="#modal-close" title="close" class="modal-close" data-bs-dismiss="modal" aria-label="close">X</a> 
+                                        <h2>Modal Headline</h2>
+                                        <p>Insert any text here in the paragraph tags to display in your modal pop-up.</p>  
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis libero alias id at aut minus magnam sapiente consequuntur! Veniam deserunt animi nisi ipsum. Itaque nisi pariatur ducimus aspernatur fugiat. Accusantium!
+                                        Explicabo eos velit sapiente sit vero. Illo consequatur alias facilis facere illum excepturi blanditiis, nihil a dolores quae eveniet atque labore accusantium error tenetur deserunt nam dicta quasi in! Quae? </p>                                 
+                                    </div>
+                                </div>
+                            </section>
+                        </section>
+                    </section>
+                        
+                    <pre>
+                        <code class="language-html">
+&lt;body&gt;
+
+    &lt;-- Modal Pop-Up Text Example  --&gt;
+    &lt;p&gt;Write text and add a link that opens up as a modal pop-up
+        &lt;a href="#open-modal-1"&gt;Click Here&lt;/a&gt; for more information.&lt;/p&gt;
+
+    &lt;div id="open-modal-1" class="modal-content"&gt;
+        &lt;div class="container"&gt;
+            &lt;a href="#modal-close" title="close" class="modal-close" data-bs-dismiss="modal" aria-label="close"&lt;X&gt;&lt;/a&gt;
+            &lt;h2&gt;Modal Headline&lt;/h2&gt;
+            &lt;p&gt;Insert any text here in the paragraph tags to display in your modal pop-up.&lt;/p&gt;     
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+
+    &lt;-- Modal Pop-Up Button Example --&gt;
+    &lt;button type="button" class="for-schools-btn-five bg-blue color-white"&gt;
+        &lt;a href="#open-modal-btn-1" class="color-white"&gt;Click&lt;/a&gt;
+    &lt;button&gt;
+
+    &lt;div id="open-modal-btn-1" class="modal-content"&gt;
+        &lt;div class="container"&gt;
+            &lt;a href="#modal-close" title="close" class="modal-close" data-bs-dismiss="modal" aria-label="close"&lt;X&gt;&lt;/a&gt;
+            &lt;h2&gt;Modal Headline&lt;/h2&gt;
+            &lt;p&gt;Insert any text here in the paragraph tags to display in your modal pop-up.&lt;/p&gt;     
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+                        </code>
+                    </pre>                                      
+                </section>
+
+                <section id="comp-js-01">
+                    <h3>JS Component: <em class="highlight">Slideshow</em></h3>
+                    <p>A slideshow is used to cycle through elements. After following instructions described in <span class="text-bold">Start</span> section, take into account that <span class="utility-code color-pink">.for-schools-slideshow</span> class must be added into wrap images section.</p> 
+                    
+                    <section class="sample-slide">
+                        <h1>Title</h1>
+                        <section class="slideshow">
+                            <img src="../images/sample01.jpg" alt="img 01">
+                            <img src="../images/sample02.jpg" alt="img 02">
+                            <img src="../images/sample03.jpg" alt="img 03">                            
+                        </section>         
+                        
+                            
+                    </section>
+                    
+                    <pre>
+                        <code class="language-html">
+&lt;body class="for-schools-body-slideshow"&gt;
+    &lt;h1 class="for-schools-title-slideshow"&gt;Title&lt;/h1&gt;
+    &lt;section class="for-schools-slideshow"&gt;
+        &lt;img src="../images/sample01.jpg" alt="img 01"&gt;
+        &lt;img src="../images/sample02.jpg" alt="img 02"&gt;
+        &lt;img src="../images/sample03.jpg" alt="img 03"&gt;                                                       
+    &lt;/section&gt;
+&lt;/body&gt;
+                        </code>
+                    </pre>                   
+                </section>
+                                              
+                
+
+                <section id="comp-js-02">
+                    <h3>JS Component: <em class="highlight">Calendar</em></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nihil necessitatibus consequatur voluptas ab modi cumque, vitae a quod? Aperiam, dolores! Et soluta ut tenetur voluptatem velit quia eveniet consectetur.</p>  
+                    
+                
+                    <section class="sample">
+                        
+                        <section class="calendar-img">
+                            <a href="../pages/calendar.html"><img src="../images/calendar.png" alt="calendar"> </a>      
+                        </section>         
+                    </section> 
+
+                    <pre>
+                        <code class="language-html">
+&lt;body&gt;
+    &lt;div class="calendar-wrapper"&gt;
+        &lt;div class="calendar-container"&gt;
+            &lt;div class="left"&gt;
+                &lt;div class="calendar"&gt;
+                    &lt;div class="month"&gt;
+                        &lt;i class="fa fa-angle-left prev"&gt;&lt;/i&gt;
+                        &lt;div class="date"&gt;&lt;/div&gt;
+                        &lt;i class="fa fa-angle-right next"&gt;&lt;/i&gt;
+                    &lt;/div&gt;
+                    &lt;div class="weekdays"&gt;
+                        &lt;div&gt;sun&lt;/div&gt;
+                        &lt;div&gt;mon&lt;/div&gt;
+                        &lt;div&gt;tue&lt;/div&gt;
+                        &lt;div&gt;wed&lt;/div&gt;
+                        &lt;div&gt;thu&lt;/div&gt;
+                        &lt;div&gt;fri&lt;/div&gt;
+                        &lt;div&gt;sat&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="days"&gt;&lt;/div&gt;
+                    &lt;div class="goto-today"&gt;
+                        &lt;div class="goto"&gt;
+                            &lt;input type="text" placeholder="mmyyyy" class="date-input"&gt;
+                            &lt;button class="goto-btn" type="submit"&gt;go&lt;/button&gt;
+                        &lt;/div&gt;
+                        &lt;button class="today-btn"&gt;Today&lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt; 
+            &lt;div class="right"&gt;
+                &lt;div class="today-date"&gt;
+                    &lt;div class="event-day"&gt;&lt;/div&gt;
+                    &lt;div class="event-date"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="events"&gt;&lt;/div&gt;
+                
+                &lt;div class="add-event-wrapper"&gt;
+                    &lt;div class="add-event-header"&gt;
+                        &lt;div class="title"&gt;
+                            Add Event with 4 digit 24 Hour Time Format
+                        &lt;/div&gt;
+                        &lt;i class="fa fa-times close"&gt;&lt;/i&gt;
+                    &lt;/div&gt;
+                    &lt;div class="add-event-body"&gt;
+                        &lt;div class="add-event-input"&gt;
+                            &lt;input type="text" placeholder="Event Name" class="event-name"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="add-event-input"&gt;
+                            &lt;input type="text" placeholder="Event Time From" class="event-time-from"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="add-event-input"&gt;
+                            &lt;input type="text" placeholder="Event Time To" class="event-time-to"&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="add-event-footer"&gt;
+                        &lt;button class="add-event-btn"&gt;Add Event&lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;button class="add-event"&gt;&lt;i class="fa fa-plus"&gt; New Event&lt;/i&gt;&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+                        </code>
+                    </pre>                   
+                </section>
+
+                
+
+                
+                
+            </article>
+
+            
+
+            <article class="hand-up">
+                <a href="#page-top"><i class="fa-solid fa-hand-pointer"></i></a>                                
+            </article>
+            
+        </main>
+
+        <footer class="footer">
+            <section class="contact">
+                <section class="communication">
+                    <h2 class="footerTitle">Contact Us</h2>
+                    <ul class="commIcons">
+                        <li><a href="mailto:contact@fourschools.com"><i class="fa-regular fa-envelope"></i>contact@fourschools.com</a></li>
+                        <li><i class="fa-solid fa-phone-flip"></i>(+1)123456789</li>
+                        <li><i class="fa-solid fa-location-dot"></i> San Diego CA - USA</li>
+                    </ul>                   
+                </section>
+
+                <section class="socialMedia">
+                    <h2 class="footerTitle">Follow Us</h2>
+                    <ul class="socialIcons">
+                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </section>
+
+            </section>
+
+
+            <section class="bottom">
+                <p>&copy; Copyright 2023</p>
+                <p>Powered by For Schools</p>
+            </section>            
+        </footer>   
+
+        
+        <!-- Script file of 4-Schools website-->
+        <script src="../scripts/script.js"></script> 
+
+        <!-- For Schools framework -->
+        <script src="../scripts/for-schools.js"></script>
+        <script src="../scripts/prism.js"></script>
+        <script src="../scripts/calendar.js"></script>
+    </body>
+
+</html>

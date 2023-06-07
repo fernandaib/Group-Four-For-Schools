@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>4-S|Start</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+        <link rel="icon" type="image/ico" href="../images/favicon-32.png">
+        
+        <!--Responsive website -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- This is how we link to an external css file -->
+        
+        <!--EXTERNAL CSS -->
+        <link rel="stylesheet" href="../css/reset.css"> 
+        
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> 
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Acme&family=Figtree:wght@400;800&family=Source+Code+Pro:wght@400;800&display=swap" rel="stylesheet">
+        
+        <!--EXTERNAL CSS -->        
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/prism.css">
+             
+        
+              
+                      
+                               
+    </head>
+    
+    <body id="page-top">
+        <header class="header">
+
+            <a href="../index.html">
+                <img src="../images/logoWhite.svg" alt="logo" class="mainLogo">                
+            </a>
+
+            <nav class="navigation">
+                <input type="checkbox" class="toggleMenu">
+                <div class="hamburger"></div>
+
+                <ul class="menu">
+                    <li><a href="../index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                    <li><i class="fa-solid fa-flag-checkered"></i>Start</li>
+                    <li><a href="styling.html"><i class="fa-solid fa-paintbrush"></i>Styling</a></li>
+                    <li><a href="components.html"><i class="fa-solid fa-puzzle-piece"></i>Components</a></li>
+                    <li><a href="demo.html"><i class="fa-solid fa-laptop-code"></i>Demo</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <aside>
+
+                      
+            <section class="aside-text" id="aside-menu">                
+                <h2>Start</h2>                
+                <ul class="aside-list">
+                    <li><a href="#start-download">Download</a></li>
+                    <li><a href="#start-steps">Next steps</a></li>
+                    
+                    
+                </ul>                    
+            </section>  
+            
+            <div class="aside-hide" onclick="myFunction()">
+                <i class="fa-solid fa-caret-right" id="open"></i> 
+                <i class="fa-solid fa-caret-left" id="close"></i>
+            </div>
+                   
+            
+        </aside>
+
+        <main class="main-framework">
+            
+            <article class="article-01">
+                <h2>Start</h2>
+
+                <section id="start-download">
+                    <h3>Download</h3>
+                    <p>Both CSS and JS files must be downloaded and saved into respective folder before starting with <em class="brand">For Schools</em>.</p>    
+                    
+                    <section class="download-btns">
+                        <button class="intro-btns" onclick="window.open('https://github.com/fernandaib/For-school-files', '_blank')">
+                            CSS file
+                        </button>  
+
+                        <button class="intro-btns"  onclick="window.open('https://github.com/fernandaib/For-school-files', '_blank')">
+                            JS file
+                        </button>                         
+                    </section>
+                </section>
+
+                <section id="start-steps">
+                    <h3>Next steps</h3>
+                    <ol class="steps">
+                        <li>After completing the instruction described above, create a new <code class="code-template">index.html</code> file in the project root.                            
+                            <pre>
+                                <code class="language-html">
+&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+        &lt;title&gt;For Schools demo&lt;/title&gt;
+
+        &lt;!-- Font Awesome --&gt;
+        &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"&gt;
+
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Hello, world!&lt;/h1&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                                   
+                                </code>
+                            </pre>
+                        </li>
+
+                        <li>Link <em class="brand">For Schools'</em> CSS file through <code class="code-template">&lt;link&gt;</code> tag in the <code class="code-template">&lt;head&gt;</code>, and JS file through <code class="code-template">&lt;script&gt;</code> tag before the closing <code class="code-template">&lt;/body&gt;</code>.
+                            <pre>
+                                <code class="language-html">
+&lt;!doctype html&gt;                                    
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;title&gt;For Schools demo&lt;/title&gt;
+    &lt;link rel="stylesheet" href="css/for-schools.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+    &lt;script src="scripts/for-schools.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+                                </code>
+                            </pre>
+
+                        
+                        </li>
+                        <li>Hello, world! Open the page in your browser of choice to see your <em class="brand">For Schools</em> page.</li>
+                        
+                    </ol>   
+                    
+                    
+                    
+                </section>
+
+            </article>            
+
+            <article class="hand-up">
+                <a href="#page-top"><i class="fa-solid fa-hand-pointer"></i></a>                                
+            </article>
+            
+        </main>
+
+        <footer class="footer">
+            <section class="contact">
+                <section class="communication">
+                    <h2 class="footerTitle">Contact Us</h2>
+                    <ul class="commIcons">
+                        <li><a href="mailto:contact@fourschools.com"><i class="fa-regular fa-envelope"></i>contact@fourschools.com</a></li>
+                        <li><i class="fa-solid fa-phone-flip"></i>(+1)123456789</li>
+                        <li><i class="fa-solid fa-location-dot"></i> San Diego CA - USA</li>
+                    </ul>                   
+                </section>
+
+                <section class="socialMedia">
+                    <h2 class="footerTitle">Follow Us</h2>
+                    <ul class="socialIcons">
+                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </section>
+
+            </section>
+
+
+            <section class="bottom">
+                <p>&copy; Copyright 2023</p>
+                <p>Powered by For Schools</p>
+            </section>            
+        </footer>   
+
+        <!-- Script file -->
+        <script src="scripts/jquery-3.6.3.min.js"></script>
+        <script src="../scripts/prism.js"></script> 
+        <script src="../scripts/script.js"></script> 
+       
+        
+    </body>
+
+
+</html>

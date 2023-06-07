@@ -1,0 +1,1448 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>4-S|Styling</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+        <link rel="icon" type="image/ico" href="../images/favicon-32.png">
+        
+        <!--Responsive website -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- This is how we link to an external css file -->
+        
+        <!--EXTERNAL CSS -->
+        <link rel="stylesheet" href="../css/reset.css"> 
+        
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> 
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Acme&family=Figtree:wght@400;800&family=Source+Code+Pro:wght@400;800&display=swap" rel="stylesheet">
+        
+        <!--EXTERNAL CSS -->        
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/prism.css">
+            
+        <!-- For Schools framework -->             
+        <link rel="stylesheet" href="../css/for-schools-styling.css">         
+        <link rel="stylesheet" href="../css/for-schools.css">    
+              
+                      
+                               
+    </head>
+    
+    <body id="page-top">
+        <header class="header">
+
+            <a href="../index.html">
+                <img src="../images/logoWhite.svg" alt="logo" class="mainLogo">                
+            </a>
+
+            <nav class="navigation">
+                <input type="checkbox" class="toggleMenu">
+                <div class="hamburger"></div>
+
+                <ul class="menu">
+                    <li><a href="../index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                    <li><a href="intro.html"><i class="fa-solid fa-flag-checkered"></i>Start</a></li>
+                    <li><i class="fa-solid fa-paintbrush"></i>Styling</li>
+                    <li><a href="components.html"><i class="fa-solid fa-puzzle-piece"></i>Components</a></li>
+                    <li><a href="demo.html"><i class="fa-solid fa-laptop-code"></i>Demo</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <aside>
+
+                      
+            <section class="aside-text" id="aside-menu">                
+                <h2>Styling</h2>                
+                <ul class="aside-list">
+                    <li><a href="#styling-reset">Reset</a></li>
+                    <li><a href="#styling-grid">Grid</a></li>
+                    <li><a href="#styling-typing">Typography</a></li>
+                    <li><a href="#styling-table">Table</a></li>
+                    <li><a href="#styling-forms">Forms</a></li>
+                    <li><a href="#styling-btn">Buttons</a></li>
+                    <li><a href="#styling-img">Images</a></li>
+                    <li><a href="#styling-helper">Helper</a></li>
+                    <li><a href="#styling-noprint">No-print</a></li>
+                    <li><a href="#styling-marg-pad">Margin and Paddings</a></li>
+                    <li><a href="#styling-colors">Colors</a></li> 
+                    <li><a href="#styling-icons">Icons</a></li> 
+                    
+                </ul>                    
+            </section>  
+            
+            <div class="aside-hide" onclick="myFunction()">
+                <i class="fa-solid fa-caret-right" id="open"></i> 
+                <i class="fa-solid fa-caret-left" id="close"></i>
+            </div>
+                   
+            
+        </aside>
+
+        <main class="main-framework">
+            
+            <article class="article-01">
+                <h2>Styling</h2>
+<!-- Reset  -->
+                <section class="styling" id="styling-reset">
+                    <h3>Reset</h3>
+                    <p>Link <code class="code-template">for-schools-styling.css</code> file through <code class="code-template">&lt;link&gt;</code> tag in the <code class="code-template">&lt;head&gt;</code>.</p>   
+                    <br>
+                    
+
+                    <pre>
+                                <code class="language-html">
+&lt;!doctype html&gt;                                    
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;title&gt;For Schools demo&lt;/title&gt;
+    &lt;link rel="stylesheet" href="css/for-schools-styling.css"&gt;
+    &lt;link rel="stylesheet" href="css/for-schools.css"&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+    &lt;script src="scripts/for-schools.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+                                </code>
+                            </pre>
+                                         
+                </section>
+<!-- Grid -->
+                <section class="styling" id="styling-grid">
+                    <h3>Grid System</h3>
+                    <section class="sample">
+                        <section class="grid-sample">
+                            <section class="grid-inner-sample">
+                                <h2>Flexbox Grid Layout</h2>
+                                <!-- flexbox grid sample display -->
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="column col-12">
+                                            <div class="bg-teal display-box"> 
+                                                <p class="color-white">col-12 (100%)</p>    
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column col-9">
+                                          <div class="bg-teal display-box">
+                                                <p class="color-white">col-9 (75%)</p>  
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column col-8">
+                                          <div class="bg-teal display-box">
+                                                <p class="color-white">col-8 </p>  
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column col-6">
+                                            <div class="bg-teal display-box">
+                                                <p class="color-white">col-6 (50%)</p>  
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column col-4">
+                                          <div class="bg-teal display-box">
+                                                <p class="color-white">col-4 </p>  
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column col-3">
+                                            <div class="bg-teal display-box">
+                                                <p class="color-white">col-3 (25%)</p>  
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column col-2">
+                                            <div class="bg-teal display-box">
+                                                <p class="color-white">col-2</p>  
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </section>
+                        </section>
+                    </section>
+
+
+                    <p>The layout includes flexbox based responsive grid system with 12 columns.</p>
+                    <p>Add the <span class="utility-code color-pink">.row</span>  class to a container with the <span class="utility-code color-pink">.container</span> class. And add any element you want with the <span class="utility-code color-pink">.column</span>  class inside the container. These columns will take up the space equally. You can specify the width of each column by adding class <span class="utility-code color-pink">col-</span> followed by the number 1 through 12 to indicate a width.</p>
+
+
+                    <section class="sample">
+                        <section class="grid-example-1">
+                            <section class="grid-inner-example">
+                                <!-- flexbox grid example -->
+                                <h3>Example 1 - Flexbox</h3>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="column col-6 display-box">col-6</div>
+                                        <div class="column col-3 display-box">col-3</div>
+                                        <div class="column col-2 display-box">col-2</div>
+                                        <div class="column col-1 display-box">col-1</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column col-4 display-box">col-4</div>
+                                        <div class="column col-4 display-box">col-4</div>
+                                        <div class="column col-4 display-box">col-4</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column col-6 display-box">col-6</div>
+                                        <div class="column col-6 display-box">col-6</div>
+                                    </div>
+
+                                </div>  
+                            </section>
+                        </section>
+                    </section>
+
+                    
+                    <pre>
+                        <code class="language-html">
+&lt;body&gt;
+    &lt;div class="container"&gt;
+        &lt;----- Example 1a -----&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="column col-6"&gt;col-6&lt;/div&gt;
+            &lt;div class="column col-3"&gt;col-3&lt;/div&gt;
+            &lt;div class="column col-2"&gt;col-2&lt;/div&gt;
+            &lt;div class="column col-1"&gt;col-1&lt;/div&gt;
+        &lt;/div&gt;  
+        &lt;----- Example 1b -----&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="column col-4"&gt;col-6&lt;/div&gt;
+            &lt;div class="column col-4"&gt;col-4&lt;/div&gt;
+            &lt;div class="column col-4"&gt;col-4&lt;/div&gt;
+        &lt;/div&gt;  
+        &lt;----- Example 1c -----&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="column col-6"&gt;col-6&lt;/div&gt;
+            &lt;div class="column col-6"&gt;col-6&lt;/div&gt;
+        &lt;/div&gt;  
+    &lt;/div&gt;            
+&lt;/body&gt;
+                        </code>
+                    </pre>
+                    
+                    
+                    <h3>Responsive Container </h3>
+                    <section class="sample">
+                        <section class="grid-sample-2">
+                            <section class="grid-inner-sample">
+                                <h2>Responsive Container</h2>
+                                <!-- Responsive Container sample display -->
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="column col-10 col-lg-8 col-md-6 col-sm-4">
+                                          <div class="display-box bg-teal">
+                                            <div class="color-white">col-10</div>
+                                            <div class="color-white">col-lg-8</div>
+                                            <div class="color-white">col-md-6</div>
+                                            <div class="color-white">col-sm-4</div>
+                                          </div>
+                                        </div>
+                                        <div class="column col-2 col-lg-4 col-md-6 col-sm-8">
+                                          <div class="display-box bg-teal">
+                                            <div class="color-white">col-2</div>
+                                            <div class="color-white">col-lg-4</div>
+                                            <div class="color-white">col-md-6</div>
+                                            <div class="color-white">col-sm-8</div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </section>
+                        </section>
+                    </section>
+                    
+                    <p>There are <span class="utility-code color-pink">col-xs-*, col-sm-*, col-md-*, col-lg-* and col-xl-*</span>  available for flexible grid across mobile, tablet and desktop viewport usage.</p>
+                    <ul class="unordered-list display-list">
+                        <li> <span class="text-bold">col-xs-*</span> apply to width smaller than 576px. X-Small devices (portrait phones, less than 576px)</li>
+                        <li> <span class="text-bold">col-sm-*</span> apply to width smaller than or equal to 767px. Small devices (landscape phones, 576px up to 767px)</li>
+                        <li> <span class="text-bold">col-md-*</span> apply to width smaller than or equal to 991px. Medium devices (tablets, 768px up to 991px)</li>
+                        <li> <span class="text-bold">col-lg-*</span>  apply to width smaller than or equal to 1199px. Large devices (desktops, 992px up to 1199px)</li>
+                        <li> <span class="text-bold">col-xl-*</span>  apply to width smaller than or equal to 1400px X-Large devices (large desktops, 1200px up to 1400).</li>
+                        <li><span class="text-bold">col-*</span>  apply to all width, including the width wider than 1400px.</li>
+                    </ul>                    
+                    <section class="sample">
+                        <section class="grid-example-2">
+                            <section class="grid-inner-example-2">
+                                <h3>Example 2 - Responsive Container</h3>
+                                <!-- grid example 2 -->
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="column col-4 col-xs-6 display-box">col-4 col-xs-6</div>
+                                        <div class="column col-4 col-xs-3 display-box">col-4 col-xs-3</div>
+                                        <div class="column col-4 col-xs-3 display-box">col-4 col-xs-3</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column col-4 col-xs-6 col-md-4 display-box">col-4 col-xs-6 col-md-4</div>
+                                        <div class="column col-4 col-xs-3 col-md-5 display-box">col-4 col-xs-3 col-md-5</div>
+                                        <div class="column col-4 col-xs-3 col-md-3 display-box">col-4 col-xs-3 col-md-3</div>
+                                    </div>
+                                </div>  
+                            </section>
+                        </section>
+                    </section>
+
+                    
+
+
+                    <pre>
+                        <code class="language-html">
+&lt;body&gt;
+    &lt;div class="container"&gt;
+        &lt;----- Example 2a -----&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="column col-4 col-xs-6"&gt;column col-4 col-xs-6&lt;/div&gt;
+            &lt;div class="column col-4 col-xs-3"&gt;column col-4 col-xs-3&lt;/div&gt;  
+            &lt;div class="column col-4 col-xs-3"&gt;column col-4 col-xs-3&lt;/div&gt;
+        &lt;/div&gt;                    
+        &lt;----- Example 2b -----&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="column col-4 col-xs-6 col-md-4"&gt;column col-4 col-xs-6 col-lg-4&lt;/div&gt;
+            &lt;div class="column col-4 col-xs-3 col-md-5"&gt;column col-4 col-xs-3 col-md-5&lt;/div&gt;  
+            &lt;div class="column col-4 col-xs-3 col-md-3"&gt;column col-4 col-xs-3 col-md-3&lt;/div&gt;
+        &lt;/div&gt;            
+    &lt;/div&gt;            
+&lt;/body&gt;                    
+                        </code>
+                    </pre> 
+                    
+                    
+                    <h3>Column offset </h3>
+                    <p>The Flexbox grid provides margin auto utilities to set offset. There are <span class="utility-code color-pink">.col-ml-auto</span>, <span class="utility-code color-pink">.col-mr-auto</span> and <span class="utility-code color-pink">.col-mx-auto</span> to set margins between columns without using empty columns.</p>
+                    <ol class="ordered-list display-list">
+                        <li><span class="text-bold">.col-ml-auto</span> offsets the left of the column.</li>
+                        <li><span class="text-bold">.col-mr-auto</span> offsets the right of the column.</li>
+                        <li><span class="text-bold">.col-mx-auto</span> offsets the left and right of the column.</li>
+                    </ol>
+
+                    <span class="utility-code color-pink"></span> 
+                    <section class="sample">
+                        <section class="grid-sample-3">
+                            <section class="grid-inner-sample-3">
+                                <!-- <h2>Column Offset</h2> -->
+                                <!-- Grid Offset example -->
+                                <h3>Example 3 - Column offset</h3>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="column col-4 col-mr-auto display-box">col-4 col-mr-auto</div>
+                                        <div class="column col-2 display-box">col-2</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column col-6 col-mx-auto display-box">col-6 col-mx-auto</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column col-6 col-ml-auto display-box">col-6 col-ml-auto</div>
+                                    </div>
+                                </div>  
+                            </section>
+                        </section>
+                    </section>
+                    
+                   
+                      
+
+
+                  
+                    
+                  
+
+                   
+                    <pre>
+                        <code class="language-html">
+&lt;body&gt;
+    &lt;div class="container"&gt;
+        &lt;----- Example 3a -----&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="column col-4 col-mr-auto"&gt;col-4 col-mr-auto&lt;/div&gt;
+            &lt;div class="column col-2"&gt;col-2&lt;/div&gt;
+        &lt;/div&gt; 
+        &lt;----- Example 3b -----&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="column col-6 col-mx-auto"&gt;col-6 col-mx-auto&lt;/div&gt;
+        &lt;/div&gt; 
+        &lt;----- Example 3c -----&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="column col-6 col-ml-auto"&gt;col-6 col-ml-auto&lt;/div&gt;
+        &lt;/div&gt; 
+    &lt;/div&gt;            
+&lt;/body&gt;                    
+                        </code>
+                    </pre>
+                </section>
+<!-- Typography  -->
+                <section class="styling" id="styling-typing">
+                    <h3>Typography</h3>
+                    <p>Type is all set with the rems, so font-sizes and spacial relationships can be responsively sized based on a single <code>&lt;html&gt;</code>  font-size property.</p>  
+                  
+                    <p><span class="text-bold">Fonts: </span>   The typography font base by default is <a href="http://www.google.com/fonts/specimen/Poppins">Poppins</a> served by Google. The font may be changed to <a href="http://www.google.com/fonts/specimen/Source+Sans+Pro">Source Sans Pro</a> by applying the class <span class="utility-code color-pink">.ff-source-sans-pro</span> to the <code>&lt;html&gt;</code> element(s). If you wish to change the default font to Source Sans Pro apply the class .ff-source-sans-pro to the <code>&lt;body&gt;</code> tag. If you would like to use both fonts interchangeably, apply the class <span class="utility-code color-pink">.ff-poppins</span> or <span class="utility-code color-pink">.ff-source-sans-pro</span> to the <code>&lt;html&gt;</code> element(s) you would like to style.</p>
+
+                    <p><span class="text-bold">Font Size:</span> Quickly change the font-size of text. While our heading classes (e.g., .h1–.h6)  </p>
+                    
+                    <p><span class="text-bold">Font Weights and Stylings:</span> Change the font-weight or font-style of text with the utilities listed below. Font-style utilities are prefixed as <span class="utility-code color-pink"> .text-* </span>and font-weight utilities are prefixed as <span class="utility-code color-pink">.font-*</span>.</p>
+                    
+                    <p> <span class="text-bold">Text-Alignment:</span>  Easily realign text to components with text alignment classes. For left, right, and center alignment, responsive classes are available that use the same viewport width breakpoints as the grid system. Text-Alignment utilities are prefixed as <span class="utility-code color-pink">.text-*</span>.</p>
+                    
+                    <p><span class="text-bold">Text-Transform:</span> Transform text in components with text capitalization classes. Text-Transform utilities are also prefixed as <span class="utility-code color-pink">.text-* </span>.</p>
+                    
+                    <p><span class="text-bold">Letter Spacing:</span> Change the letter spacing with <span class="utility-code color-pink">.letter-spacing-*</span> utilities.</p>
+                    
+                    <section class="sample">
+                        <section class="typography-sample">
+                            <section class="typography-inner-sample">
+                                <h2>Typography</h2>
+                               
+                                <h3>Font Size</h3>
+                                <section class="ff-source-sans-pro">  
+                                    <p class="ff-source-sans-pro fs-1">Source Sans Pro .fs-1 </p>
+                                    <p class="ff-source-sans-pro fs-2">Source Sans Pro .fs-2</p>
+                                    <p class="ff-source-sans-pro fs-3">Source Sans Pro .fs-3</p>
+                                    <p class="ff-source-sans-pro fs-4">Source Sans Pro .fs-4</p>
+                                    <p class="ff-source-sans-pro fs-5">Source Sans Pro .fs-5</p>
+                                    <p class="ff-source-sans-pro fs-6">Source Sans Pro .fs-6</p>
+                                </section>
+                                
+                                <h3>Default Text - Poppins</h3>
+                                <section class="ff-poppins">
+                                    <p class="ff-poppins fs-1">Poppins .fs-1</p>
+                                    <p class="ff-poppins fs-2">Poppins .fs-2</p>
+                                    <p class="ff-poppins fs-3">Poppins .fs-3</p>
+                                    <p class="ff-poppins fs-4">Poppins .fs-4</p>
+                                    <p class="ff-poppins fs-5">Poppins .fs-5</p>
+                                    <p class="ff-poppins fs-6">Poppins .fs-6</p>
+                                </section>    
+
+                                <h3>Font Weights</h3>
+                                <section>
+                                    <p class="font-thin fs-4">Font Thin</p>
+                                    <p class="font-lighter fs-4">Font Extra Light</p>
+                                    <p class="font-light fs-4">Font Light</p>
+                                    <p class="font-normal fs-4">Font Normal</p>
+                                    <p class="font-medium fs-4">Font Medium</p>
+                                    <p class="font-semibold fs-4">Font Semibold</p>
+                                    <p class="font-bold fs-4">Font Bold</p>
+                                    <p class="font-extrabold fs-4">Font Extrabold</p>
+                                </section>
+
+                                <h3>Font Stylings</h3>
+                                <section>
+                                    <p class="text-bold">Bolded text.</p>
+                                    <p class="text-emphasized">Italic text.</p>
+                                    <p class="text-underlined">Underlined text.</p>
+
+
+                                <h3 class="text-underlined">Text alignment</h3>
+                                <section>
+                                    <p class="text-left">Start aligned text on all viewport sizes or to the left side.</p>
+                                    <p class="text-center">Center aligned text on all viewport sizes.</p>
+                                    <p class="text-right">End aligned text on all viewport sizes or to the right side.</p>
+                                </section>    
+
+                                <h3>Text Transform</h3>
+                                <section>
+                                    <p class="text-lowercase">Lowercase Text.</p>
+                                    <p class="text-uppercase">uppercase text.</p>
+                                    <p class="text-capitalize">capitalized text.</p>
+                                </section>
+
+                                <h3>Letter Spacing</h3>
+                                <section>
+                                    <p class="letter-spacing-1">Letter Spacing 1</p>
+                                    <p class="letter-spacing-2">Letter Spacing 2</p>
+                                    <p class="letter-spacing-3">Letter Spacing 3</p>
+                                    <p>Normal Letter Spacing</p>
+                                </section>
+                                    
+                                    
+                                
+            
+                            </section>
+                        </section>
+                    </section>
+                        
+                    <pre>
+                        <code class="language-html">
+&lt;body&gt;
+    &lt;-- Font Size  --&gt; 
+    &lt;section&gt;
+        &lt;p class="ff-source-sans-pro fs-1"&gt;Source Sans Pro fs-1&lt;/p&gt;
+        &lt;p class="ff-source-sans-pro fs-2"&gt;Source Sans Pro fs-2&lt;/p&gt;
+        &lt;p class="ff-source-sans-pro fs-3"&gt;Source Sans Pro fs-3&lt;/p&gt;
+        &lt;p class="ff-source-sans-pro fs-4"&gt;Source Sans Pro fs-4&lt;/p&gt;
+        &lt;p class="ff-source-sans-pro fs-5"&gt;Source Sans Pro fs-5&lt;/p&gt;
+        &lt;p class="ff-source-sans-pro fs-6"&gt;Source Sans Pro fs-6&lt;/p&gt;
+    &lt;/section&gt;  
+
+    &lt;-- Default Font Poppins  --&gt;
+    &lt;section&gt;
+        &lt;p class="ff-poppins fs-1"&gt;Poppins Heading fs-1&lt;/p&gt;
+        &lt;p class="ff-poppins fs-2"&gt;Poppins Heading fs-2&lt;/p&gt;
+        &lt;p class="ff-poppins fs-3"&gt;Poppins Heading fs-3&lt;/p&gt;
+        &lt;p class="ff-poppins fs-4"&gt;Poppins Heading fs-4&lt;/p&gt;
+        &lt;p class="ff-poppins fs-5"&gt;Poppins Heading fs-5&lt;/p&gt;
+        &lt;p class="ff-poppins fs-6"&gt;Poppins Heading fs-6&lt;/p&gt;
+    &lt;/section&gt;  
+
+    &lt;-- Font Weights --&gt;
+    &lt;section&gt; 
+        &lt;p class="font-thin fs-4"&gt;Font Thin&lt;/p&gt;                    
+        &lt;p class="font-extralight fs-4"&gt;Font Extra Light&lt;/p&gt;
+        &lt;p class="font-normal fs-4"&gt;Font Normal &lt;/p&gt;
+        &lt;p class="font-medium fs-4"&gt;Font Medium&lt;/p&gt;
+        &lt;p class="font-semibold fs-4"&gt;Font Semibold&lt;/p&gt;
+        &lt;p class="font-bold fs-4"&gt;Font Bold&lt;/p&gt;
+        &lt;p class="font-extrabold fs-4"&gt;Font Extrabold&lt;/p&gt;                                                      
+    &lt;/section&gt;   
+    
+    &lt;-- Font Stylings --&gt;
+    &lt;section&gt; 
+        &lt;p class="text-bolded"&gt;Bolded text.&lt;/p&gt; 
+        &lt;p class="text-emphasized"&gt;Italic text.&lt;/p&gt;
+        &lt;p class="text-underline"&gt;Underlined text.&lt;/p&gt;                          
+    &lt;/section&gt;  
+
+    &lt;-- Text Alignment --&gt;
+    &lt;section&gt;
+        &lt;p class="text-left"&gt;Start aligned text on all viewport sizes or to the left side.&lt;/p&gt; 
+        &lt;p class="text-center"&gt;Center aligned text on all viewport sizes.&lt;/p&gt;
+        &lt;p class="text-right"&gt;End aligned text on all viewport sizes or to the right side.&lt;/p&gt;              
+    &lt;/section&gt; 
+
+    &lt;-- Text Transform --&gt;
+    &lt;section&gt; 
+        &lt;p class="text-lowercase"&gt;Lowercase Text.&lt;/p&gt; 
+        &lt;p class="text-uppercase"&gt;uppercase text.&lt;/p&gt;
+        &lt;p class="text-capitalize"&gt;capitalized text.&lt;/p&gt;
+    &lt;/section&gt; 
+
+    &lt;-- Letter Spacing --&gt;
+    &lt;section&gt;
+        &lt;p class="letter-spacing-1"&gt;Letter Spacing 1&lt;/p&gt; 
+        &lt;p class="letter-spacing-2"&gt;Letter Spacing 2&lt;/p&gt;
+        &lt;p class="letter-spacing-3"&gt;Letter Spacing 3&lt;/p&gt;
+        &lt;p&gt;Normal Letter Spacing 3&lt;/p&gt;                      
+    &lt;/section&gt; 
+
+&lt;/body&gt;
+                        </code>
+                    </pre>
+                </section>
+<!-- Table  -->
+                <section class="styling" id="styling-table">
+                    <h3>Tables</h3>
+                    <p><span class="text-bold">Regular Tables:</span> Properly markup the <code>&lt;html&gt;</code> with <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> when building a table. Add the class <span class="utility-code color-pink">.table</span> to <code>&lt;table&gt;</code>.</p> 
+                    
+                    <p><span class="text-bold">Striped tables: </span>Use the <span class="utility-code color-pink">table-striped</span> class to <code>&lt;table&gt;</code> to add zebra striped style. For hoverable table rows, you can add the  <span class="utility-code color-pink">.table-hover</span> class to enable hover style. </p>
+
+                    <p><span class="text-bold">Bordered tables: </span>Use the <span class="utility-code color-pink">.table-bordered</span> class to <code>&lt;table&gt;</code> to add a bordered style. </p>
+
+                    <p><span class="text-bold">Responsive Table: </span> A responsive table will display a horizontal scroll bar if the screen is too small to display the full content. Resize the browser window to see the effect.  To add this feature to your table, add a <code>&lt;div&gt;</code> wrapper to the table with the class <span class="utility-code color-pink">.table-container</span> around the table and then add the  <span class="utility-code color-pink">.table-responsive</span> class to <code>&lt;table&gt;</code> element. I recommend this method for all tables to add in responsiveness!</p>
+
+
+                    <section class="sample">
+                        <section class="table-sample">
+                            <section class="table-inner-sample">
+                                <h2>Tables</h2>
+                                <h3>Regular Table</h3>
+                                <section>
+                                    <div class="table-container">
+                                    <table class="table">
+                                        <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Staff Position</th>
+                                            <th>Phone Number</th>
+                                            <th>Email Address</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>Ed Perez</td>
+                                            <td>Vice Principal</td>
+                                            <td>619-555-5551</td>
+                                            <td>ed.perez@sdccd.edu</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sophia Wright</td>
+                                            <td>Office Administrator</td>
+                                            <td>619-555-5552</td>
+                                            <td>sophia.wright@sdccd.edu</td>
+                                        </tr>
+                                       
+                                        </tbody>
+                                    </table>
+                                </div>
+                                </section>
+
+                                <h3>Striped Table</h3>
+                                <section>
+                                    <div class="table-container">
+                                        <table class="table table-striped table-hover">
+                                            <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Staff Position</th>
+                                                <th>Phone Number</th>
+                                                <th>Email Address</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr class="active">
+                                                <td>Abigail Norman</td>
+                                                <td>Principal</td>
+                                                <td>619-555-5550</td>
+                                                <td>abigail.norman@sdccd.edu</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ed Perez</td>
+                                                <td>Vice Principal</td>
+                                                <td>619-555-5551</td>
+                                                <td>ed.perez@sdccd.edu</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sophia Wright</td>
+                                                <td>Office Administrator</td>
+                                                <td>619-555-5552</td>
+                                                <td>sophia.wright@sdccd.edu</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Samantha Fields</td>
+                                                <td>Teacher</td>
+                                                <td>619-555-5553</td>
+                                                <td>samantha.fields@sdccd.edu</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </section>
+
+                                <h3>Bordered Table</h3>
+                                <section>
+                                    <div class="table-container">   
+                                        <table class="table table-bordered">
+                                            <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Staff Position</th>
+                                                <th>Phone Number</th>
+                                                <th>Email Address</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>Abigail Norman</td>
+                                                <td>Principal</td>
+                                                <td>619-555-5550</td>
+                                                <td>abigail.norman@sdccd.edu</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ed Perez</td>
+                                                <td>Vice Principal</td>
+                                                <td>619-555-5551</td>
+                                                <td>ed.perez@sdccd.edu</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sophia Wright</td>
+                                                <td>Office Administrator</td>
+                                                <td>619-555-5552</td>
+                                                <td>sophia.wright@sdccd.edu</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Samantha Fields</td>
+                                                <td>Teacher</td>
+                                                <td>619-555-5553</td>
+                                                <td>samantha.fields@sdccd.edu</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </section>
+
+                                <h3>Responsive Table</h3>
+                                <section>
+                                    <div class="table-container">
+                                        <table class="table table-responsive table-striped">
+                                            <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Staff Position</th>
+                                                <th>Phone Number</th>
+                                                <th>Email Address</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>Abigail Norman</td>
+                                                <td>Principal</td>
+                                                <td>619-555-5550</td>
+                                                <td>abigail.norman@sdccd.edu</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ed Perez</td>
+                                                <td>Vice Principal</td>
+                                                <td>619-555-5551</td>
+                                                <td>ed.perez@sdccd.edu</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sophia Wright</td>
+                                                <td>Office Administrator</td>
+                                                <td>619-555-5552</td>
+                                                <td>sophia.wright@sdccd.edu</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Samantha Fields</td>
+                                                <td>Teacher</td>
+                                                <td>619-555-5553</td>
+                                                <td>samantha.fields@sdccd.edu</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </section>
+
+                            </section>
+                        </section>
+                    </section>
+
+                    <pre>
+                        <code class="language-html">
+&lt;body&gt;
+    &lt;-- Regular Table --&gt;
+    &lt;table class="table"&gt;
+        &lt;thead&gt;
+            &lt;tr &gt;
+                &lt;th&gt;Name&lt;/th&gt;
+                &lt;th&gt;Staff Position&lt;/th&gt;
+                &lt;th&gt;Phone Number&lt;/th&gt;
+                &lt;th&gt;Email Address&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Ed Perez&lt;/td&gt;
+                &lt;td&gt;Vice Principal&lt;/td&gt;
+                &lt;td&gt;619-555-5551&lt;/td&gt;
+                &lt;td&gt;ed.perez@sdccd.edu&lt;/td&gt;
+            &lt;/tr&gt;                
+            &lt;tr&gt;
+                &lt;td&gt;Sophia Wright&lt;/td&gt;
+                &lt;td&gt;Office Administrator&lt;/td&gt;
+                &lt;td&gt;619-555-5552&lt;/td&gt;
+                &lt;td&gt;sophia.wright@sdccd.edu&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;                          
+
+    &lt;-- Striped Table --&gt;
+    &lt;table class="table table-striped table-hover"&gt;
+        &lt;thead&gt;
+            &lt;tr &gt;
+                &lt;th&gt;Name&lt;/th&gt;
+                &lt;th&gt;Staff Position&lt;/th&gt;
+                &lt;th&gt;Phone Number&lt;/th&gt;
+                &lt;th&gt;Email Address&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr class="active"&gt;
+                &lt;td&gt;Abigail Norman&lt;/td&gt;
+                &lt;td&gt;Principal&lt;/td&gt;
+                &lt;td&gt;619-555-5550&lt;/td&gt;
+                &lt;td&gt;abigail.norman@sdccd.edu&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Ed Perez&lt;/td&gt;
+                &lt;td&gt;Vice Principal&lt;/td&gt;
+                &lt;td&gt;619-555-5551&lt;/td&gt;
+                &lt;td&gt;ed.perez@sdccd.edu&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Sophia Wright&lt;/td&gt;
+                &lt;td&gt;Office Administrator&lt;/td&gt;
+                &lt;td&gt;619-555-5552&lt;/td&gt;
+                &lt;td&gt;sophia.wright@sdccd.edu&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Samantha Fields&lt;/td&gt;
+                &lt;td&gt;Teacher&lt;/td&gt;
+                &lt;td&gt;619-555-5553&lt;/td&gt;
+                &lt;td&gt;samantha.fields@sdccd.edu&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+    
+    &lt;-- Bordered Table --&gt;
+    &lt;table class="table table-bordered"&gt;
+        &lt;thead&gt;
+            &lt;tr &gt;
+                &lt;th&gt;Name&lt;/th&gt;
+                &lt;th&gt;Staff Position&lt;/th&gt;
+                &lt;th&gt;Phone Number&lt;/th&gt;
+                &lt;th&gt;Email Address&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Abigail Norman&lt;/td&gt;
+                &lt;td&gt;Principal&lt;/td&gt;
+                &lt;td&gt;619-555-5550&lt;/td&gt;
+                &lt;td&gt;abigail.norman@sdccd.edu&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Ed Perez&lt;/td&gt;
+                &lt;td&gt;Vice Principal&lt;/td&gt;
+                &lt;td&gt;619-555-5551&lt;/td&gt;
+                &lt;td&gt;ed.perez@sdccd.edu&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Sophia Wright&lt;/td&gt;
+                &lt;td&gt;Office Administrator&lt;/td&gt;
+                &lt;td&gt;619-555-5552&lt;/td&gt;
+                &lt;td&gt;sophia.wright@sdccd.edu&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Samantha Fields&lt;/td&gt;
+                &lt;td&gt;Teacher&lt;/td&gt;
+                &lt;td&gt;619-555-5553&lt;/td&gt;
+                &lt;td&gt;samantha.fields@sdccd.edu&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+
+    &lt;-- Responsive Table --&gt;
+    &lt;div class="table-container"&gt;
+        &lt;table class="table table-responsive table-striped"&gt;
+            &lt;thead&gt;
+                &lt;tr &gt;
+                    &lt;th&gt;Name&lt;/th&gt;
+                    &lt;th&gt;Staff Position&lt;/th&gt;
+                    &lt;th&gt;Phone Number&lt;/th&gt;
+                    &lt;th&gt;Email Address&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Abigail Norman&lt;/td&gt;
+                    &lt;td&gt;Principal&lt;/td&gt;
+                    &lt;td&gt;619-555-5550&lt;/td&gt;
+                    &lt;td&gt;abigail.norman@sdccd.edu&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Ed Perez&lt;/td&gt;
+                    &lt;td&gt;Vice Principal&lt;/td&gt;
+                    &lt;td&gt;619-555-5551&lt;/td&gt;
+                    &lt;td&gt;ed.perez@sdccd.edu&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Sophia Wright&lt;/td&gt;
+                    &lt;td&gt;Office Administrator&lt;/td&gt;
+                    &lt;td&gt;619-555-5552&lt;/td&gt;
+                    &lt;td&gt;sophia.wright@sdccd.edu&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Samantha Fields&lt;/td&gt;
+                    &lt;td&gt;Teacher&lt;/td&gt;
+                    &lt;td&gt;619-555-5553&lt;/td&gt;
+                    &lt;td&gt;samantha.fields@sdccd.edu&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+                        </code>
+                    </pre>
+
+                    
+                </section>
+<!-- Forms -->
+                <section class="styling" id="styling-forms">
+                    <h3>Forms</h3>
+                    <p>To build a <em class="brand">For Schools</em> form you must take account the <span class="color-orange">#for-schools</span> id. You can play around with <span class="font-semibold fs-6">background</span> and <span class="font-semibold fs-6">text</span> color with <em class="brand">For Schools</em> framework code which you will find in this page:                                               
+                        <a href="#styling-colors" target="_blank">Background Colors</a>,
+                        <a href="#txt-colors" target="_blank">Text Colors</a>.</p>  
+                    <br>
+                    
+                    <section class="sample-form bg-white">
+                        <form action="" method="post" id="for-schools" class="for-schools-form">
+                            <fieldset class="for-schools-fieldset bg-blue color-white">
+                                <legend class="for-schools-legend color-orange">Title Form</legend>
+                                <p>Please reach out us, we would like to know about you!</p>
+
+                                <label for="fullName">Your Name:</label>
+                                <input type="text" id="fullName" name="full_name">
+
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email">
+
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+
+                                <label for="msg">Your Message</label>
+                                <textarea name="message" id="msg"></textarea>
+
+                                <div class="checks">
+                                    <input type="checkbox" id="copyEmail" name="copyEmail">
+                                    <span></span>
+                                    <label for="copyEmail">Send a copy to my email</label>
+                                </div>
+
+                                <div class="radioBtns">
+                                    <p>Preferred method of contact:</p>
+                                    <label for="contactEmail">
+                                        <input type="radio" id="contactEmail" value="email" name="contactPrefence"><span></span>Email
+                                    </label>
+                                    <label for="contactPhone">
+                                        <input type="radio" id="contactPhone" value="phone" name="contactPrefence"><span></span>Phone
+                                    </label>
+                                    <label for="contactText">
+                                        <input type="radio" id="contactText" value="text" name="contactPrefence"><span></span>Message
+                                    </label>
+                                    <label for="contactMail">
+                                        <input type="radio" id="contactMail" value="mail" name="contactPrefence"><span></span>Mail
+                                    </label>
+                                </div>
+
+                                <input type="submit" id="submit" value="Contact Us" class="for-schools-btn-three bg-yellow color-dark">
+
+                            </fieldset>
+                        </form>
+
+
+                    </section>
+
+
+                    <pre>
+                        <code class="language-html">
+&lt;form action="" method="post" id="for-schools" class="for-schools-form"&gt;
+    &lt;fieldset class="for-schools-fieldset bg-blue color-white"&gt;
+        &lt;legend class="for-schools-legend color-orange"&gt;Title Form&lt;/legend&gt;
+        &lt;p&gt;Please reach out us, we would like to know about you!&lt;/p&gt;                        
+
+        &lt;label for="fullName"&gt;Your Name:&lt;/label&gt;
+        &lt;input type="text" id="fullName" name="full_name"&gt;
+
+        &lt;label for="email"&gt;Email:&lt;/label&gt;
+        &lt;input type="email" id="email" name="email"&gt;
+
+        &lt;label for="phone"&gt;Phone Number&lt;/label&gt;                        
+        &lt;input type="tel" id="phone" name="phone"&gt;                                                
+
+                                
+
+        &lt;label for="msg"&gt;Your Message&lt;/label&gt;
+        &lt;textarea name="message" id="msg"&gt;&lt;/textarea&gt;
+
+        &lt;div class="checks"&gt;
+            &lt;input type="checkbox" id="copyEmail" name="copyEmail"&gt;
+            &lt;span&gt;&lt;/span&gt;
+            &lt;label for="copyEmail"&gt;Send a copy to my email&lt;/label&gt;
+        &lt;/div&gt;                        
+
+        &lt;div class="radioBtns"&gt;
+            &lt;p&gt;Preferred method of contact:&lt;/p&gt;
+            &lt;label for="contactEmail"&gt;
+                &lt;input type="radio" id="contactEmail" value="email" name="contactPrefence"&gt;&lt;span&gt;&lt;/span&gt;Email
+            &lt;/label&gt;
+            &lt;label for="contactPhone"&gt;
+                &lt;input type="radio" id="contactEmail" value="phone" name="contactPrefence"&gt;&lt;span&gt;&lt;/span&gt;Phone
+            &lt;/label&gt;
+            &lt;label for="contactText"&gt;
+                &lt;input type="radio" id="contactEmail" value="text" name="contactPrefence"&gt;&lt;span&gt;&lt;/span&gt;Message
+            &lt;/label&gt;
+            &lt;label for="contactMail"&gt;
+                &lt;input type="radio" id="contactMail" value="mail" name="contactPrefence"&gt;&lt;span&gt;&lt;/span&gt;Mail
+            &lt;/label&gt;
+        &lt;/div&gt;
+
+        &lt;input type="submit" id="submit" value="Contact Us" class="for-schools-btn-three bg-yellow color-dark"&gt;
+
+    &lt;/fieldset&gt;
+&lt;/form&gt;                            
+                        </code>
+                    </pre>
+                </section>
+<!----------------- Buttons ----------------->
+                <section class="styling" id="styling-btn">
+                    <h3>Buttons</h3>
+                    <p><em class="brand">For Schools</em> holds several types of buttons which fit with user's needs. Their background and text color are based in <em class="brand">For Schools</em> framework which you will find in this page:
+                        <a href="#styling-colors" target="_blank">Background Colors</a>,
+                        <a href="#txt-colors" target="_blank">Text Colors</a>.                     
+                    </p>
+
+                    <br>
+                    <p>Shadows and borders display here are customizable.</p>
+
+
+                    <section class="sample-btn">
+                        <button type="button" class="for-schools-btn-one bg-orange">One</button>
+                        <button type="button" class="for-schools-btn-two bg-red color-white">Two</button>
+                        <button type="button" class="for-schools-btn-three bg-yellow">Three</button>
+                        <button type="button" class="for-schools-btn-four bg-gold">Four</button>
+                        <button type="button" class="for-schools-btn-five bg-blue color-white">Five</button>
+                        <button type="button" class="for-schools-btn-six bg-accent">Six</button>                        
+                    </section>
+                    
+
+                    <pre>
+                        <code class="language-html">
+&lt;button type="button" class="for-schools-btn-one bg-orange"&gt;One&lt;/button&gt;
+&lt;button type="button" class="for-schools-btn-two bg-red color-white"&gt;Two&lt;/button&gt;
+&lt;button type="button" class="for-schools-btn-three bg-yellow"&gt;Three&lt;/button&gt;
+&lt;button type="button" class="for-schools-btn-four bg-gold"&gt;Four&lt;/button&gt;
+&lt;button type="button" class="for-schools-btn-five bg-blue color-white"&gt;Five&lt;/button&gt;
+&lt;button type="button" class="for-schools-btn-six bg-accent"&gt;Six&lt;/button&gt;                                                 
+                        </code>
+                    </pre>                  
+                </section>
+<!-- Images  -->
+                <section class="styling" id="styling-img">
+                    <h3>Responsive Images</h3>
+                    <p>Responsive images will automatically adjust to fit the size of the screen. Add the class <span class="utility-code color-pink">.responsive-img</span> to your img element and resize the browser window to see the responsive effect:</p>    
+                    <br>
+                    
+                    <section class="sample">
+                        <section class="images-sample">
+                            <section class="images-inner-sample">
+                                <h2>Responsive Images</h2>
+                                <div>
+                                    <img src="../images/education-day-arrangement-table-with-copy-space.jpg" class="responsive-img">
+                                </div>
+                            </section>
+                        </section>
+                    </section>
+                        
+                    <pre>
+                        <code class="language-html">
+&lt;body&gt;
+    &lt;p&gt;Code is here&lt;/p&gt;
+    &lt;img src="/images/classroom" alt="classroom" class="responsive-img"&gt;        
+&lt;/body&gt;
+                        </code>
+                    </pre>              
+
+                    
+                </section>
+<!-- Helper -->
+                <section class="styling" id="styling-helper">
+                    <h3>Helper</h3>
+                    <p> <span class="text-bold">Float: </span>
+                    To float an element based on the current viewport size using the CSS float property. to the left apply the class <span class="utility-code color-pink">.float-left</span> and to float an element to the right apply the class <span class="utility-code color-pink">.float-right</span>.</p>
+
+                    
+                    <p><span class="text-bold">Clear Float: </span> To clear the float after using the above stated class. Apply the class <span class="utility-code color-pink">.clearfix </span> to the element.</p>
+                    
+                    <p><span class="text-bold">Full-Width: </span> To make element full width, apply the <span class="utility-code color-pink">.full-width</span> to the element's tag.</p>
+                    
+
+                    <pre>
+                        <code class="language-html">
+&lt;body&gt;
+    &lt;-- float left --&gt;
+    &lt;div class="float-left"&gt;&lt;/div&gt;
+
+    &lt;-- float right --&gt;
+    &lt;div class="float-right"&gt;&lt;/div&gt;
+
+    &lt;-- clear float --&gt;
+    &lt;div class="clearfix"&gt;&lt;/div&gt;
+
+    &lt;-- full width --&gt;
+    &lt;div class="full-width"&gt;&lt;/div&gt;
+&lt;/body&gt;
+                        </code>
+                    </pre>
+<!-- Blockquote  -->
+                    <h3>Blockquote</h3>
+
+                    <section class="sample">
+                        <section class="blockquote-sample">
+                            <section class="blockquote-inner-sample">
+                                <h2>Blockquote</h2>
+                                <blockquote>
+                                    <p>Learning HTML and CSS is a lot more challenging than it used to be. Responsive web design adds more layers of complexity to design and develop websites.</p>
+                                    <cite>– Jacob Lett</cite>
+                                </blockquote>
+                            </section>
+                        </section>
+                    </section>
+
+                    <pre>
+                        <code class="language-html">
+&lt;body&gt;
+    &lt;blockquote&gt;
+        &lt;p&gt;Learning HTML and CSS is a lot more challenging than it used to be. Responsive web design adds more layers of complexity to design and develop websites.&lt;/p&gt;
+        &lt;cite&gt;– Jacob Lett &lt;/cite&gt;
+     &lt;/blockquote&gt;        
+&lt;/body&gt;
+                        </code>
+                    </pre>
+
+
+<!-- Margins and Paddings  -->
+
+                    <h3 id="styling-marg-pad">Margins and Paddings</h3>
+                    <p>For the spacing utilities, we use the same naming convention as follow:</p>
+                    <p>Where property is one of:</p>
+                    <ul class="unordered-list display-list">
+                        <li><span class="utility-code color-pink">m</span> - for classes that set  <span class="utility-code color-pink">margin</span></li>
+                        <li><span class="utility-code color-pink">p</span> - for classes that set  <span class="utility-code color-pink">padding</span></li>
+                    </ul>
+
+                    <p>Where sides is one of:</p>
+                    <ul class="unordered-list display-list">
+                        <li><span class="utility-code color-pink">t</span> - for classes that set <span class="utility-code color-pink">margin-top</span>  or  <span class="utility-code color-pink">padding-top</span></li>
+                        <li><span class="utility-code color-pink">b</span> - for classes that set  <span class="utility-code color-pink">margin-bottom</span> or <span class="utility-code color-pink">padding-bottom</span> .</li>
+                        <li><span class="utility-code color-pink">l</span> - for classes that set  <span class="utility-code color-pink">margin-left</span> or  <span class="utility-code color-pink">padding-left</span>,  <span class="utility-code color-pink">margin-right</span> or  <span class="utility-code color-pink">padding-right</span></li>
+                        <li><span class="utility-code color-pink">r</span> - for classes that set <span class="utility-code color-pink">margin-right</span> or <span class="utility-code color-pink">padding-right</span>, <span class="utility-code color-pink">margin-left</span> or <span class="utility-code color-pink">padding-left</span>.</li>
+                        <li><span class="utility-code color-pink">x</span> - for classes that set both  <span class="utility-code color-pink">*-left</span> and  <span class="utility-code color-pink">*-right</span>.</li>
+                        <li><span class="utility-code color-pink">y</span> - for classes that set both  <span class="utility-code color-pink">*-top</span> and  <span class="utility-code color-pink">*-bottom</span></li>
+                        <li>blank - for classes that set a  <span class="utility-code color-pink">margin</span> or  <span class="utility-code color-pink">padding</span> on all 4 sides of the element</li>
+                    </ul>
+
+                    <p>Where size is one of:</p>
+                    <ul class="unordered-list display-list">
+                        <li><span class="utility-code color-pink">0</span> - for classes that eliminate the margin or padding by setting it to <span class="utility-code color-pink">0</span></li>
+                        <li><span class="utility-code color-pink">1</span> - (by default) for classes that set the margin or padding to <span class="utility-code color-pink">0.5rem (8px)</span></li>
+                        <li><span class="utility-code color-pink">2</span> - (by default) for classes that set the margin or padding to <span class="utility-code color-pink">0.75rem (12px)</span></li>
+                        <li><span class="utility-code color-pink">3</span> - (by default) for classes that set the margin or padding to <span class="utility-code color-pink">1rem (16px)</span></li>
+                        <li><span class="utility-code color-pink">4</span> - (by default) for classes that set the margin or padding to <span class="utility-code color-pink">1.25rem (20px)</span></li>
+                        <li><span class="utility-code color-pink">5</span> - (by default) for classes that set the margin or padding to <span class="utility-code color-pink">1.5rem (24px)</span></li>
+                        <li><span class="utility-code color-pink">auto</span> - for classes that set the margin to <span class="utility-code color-pink">auto</span></li>
+                    </ul>
+
+                </section>
+
+<!-- Background Color  -->
+                <h3>Background/ Text Colors</h3>
+                <section class="sample">
+                    <section class="bg-color-sample">
+                        <section class="bg-color-inner-sample">
+                            <h2 id="styling-colors">Background Colors</h2>
+                            <section class="bg-colors grid-container">
+                                <div class="bg-black"><p class="color-white">.bg-black</p></div>
+                                <div class="bg-dark"><p class="color-white">.bg-dark</p></div>
+                                <div class="bg-grey"><p class="color-white">.bg-grey</p></div>
+                                <div class="bg-blue"><p class="color-white">.bg-blue</p></div>  
+                                <div class="bg-purple"><p class="color-white">.bg-purple</p> </div>
+                                <div class="bg-pink .col-4"><p class="color-white">.bg-pink</p> </div>
+                                <div class="bg-red"><p class="color-white">.bg-red</p></div>
+                                <div class="bg-orange"><p class="color-white">.bg-orange</p></div>
+                                <div class="bg-yellow"><p>.bg-yellow</p></div>
+                                <div class="bg-gold"><p>.bg-gold</p></div>  
+                                <div class="bg-teal"><p>.bg-teal</p></div>  
+                                <div class="bg-green"><p>.bg-green</p> </div>
+                                <div class="bg-accent"><p>.bg-accent</p></div>
+                                <div class="bg-white"><p>.bg-white</p></div>  
+                            </section>
+                        </section>
+                    </section>
+                </section>
+                <p>To utilize the background color utilities add the class <span class="display-code color-pink">.bg-* </span> and the specified color.</p>
+                <pre>
+                    <code class="language-html">
+&lt;body&gt;
+    &lt;-- Background Colors --&gt;
+    &lt;/section&gt; 
+        &lt;div class="bg-black"&gt;.bg-black&lt;/div&gt;
+        &lt;div class="bg-dark"&gt;.bg-dark&lt;/div&gt;
+        &lt;div class="bg-grey"&gt;.bg-grey&lt;/div&gt;
+        &lt;div class="bg-blue"&gt;.bg-blue&lt;/div&gt;
+        &lt;div class="bg-purple"&gt;.bg-purple&lt;/div&gt;
+        &lt;div class="bg-pink"&gt;.bg-pink&lt;/div&gt;
+        &lt;div class="bg-red"&gt;.bg-red&lt;/div&gt;
+        &lt;div class="bg-orange"&gt;.bg-orange&lt;/div&gt;
+        &lt;div class="bg-yellow"&gt;.bg-yellow&lt;/div&gt;
+        &lt;div class="bg-gold"&gt;.bg-gold&lt;/div&gt;
+        &lt;div class="bg-teal"&gt;.bg-teal&lt;/div&gt;
+        &lt;div class="bg-green"&gt;.bg-green&lt;/div&gt;
+        &lt;div class="bg-accent"&gt;.bg-accent&lt;/div&gt;
+        &lt;div class="bg-white"&gt;.bg-white&lt;/div&gt;
+    &lt;/section&gt;    
+&lt;/body&gt;
+                    </code>
+                </pre>        
+
+<!-- Text Colors  -->
+                <section class="sample">
+                    <section class="text-color-sample">
+                        <section class="text-color-inner-sample">
+                            <h2 id="txt-colors">Text Colors</h2>
+                            <section class="colors">
+                                <p class="color-black">.color-black</p>
+                                <p class="color-dark">.color-dark</p>
+                                <p class="color-grey">.color-grey</p>
+                                <p class="color-blue">.color-blue</p>
+                                <p class="color-purple">.color-purple</p>
+                                <p class="color-pink">.color-pink</p>
+                                <p class="color-red">.color-red</p>
+                                <p class="color-orange">.color-orange</p>
+                                <p class="color-yellow">.color-yellow</p>
+                                <p class="color-gold">.color-gold</p>
+                                <p class="color-teal">.color-teal</p>
+                                <p class="color-green">.color-green</p>
+                                <p class="color-accent">.color-accent</p>
+                                <p class="color-white bg-black">.color-white</p>                                   
+                            </section>
+                        </section>
+                    </section>
+                </section>
+                <p>To utilize the text color utilities add the class <span class="display-code color-pink">.color-*</span> and the specified color, as specified below.</p>
+                <pre>
+                    <code class="language-html">
+&lt;body&gt;
+    &lt;-- Text Colors --&gt;
+    &lt;/section&gt; 
+        &lt;p class="color-black"&gt;.color-black&lt;/p&gt;
+        &lt;p class="color-dark"&gt;.color-dark&lt;/p&gt;
+        &lt;p class="color-grey"&gt;.color-grey&lt;/p&gt;
+        &lt;p class="color-blue"&gt;.color-blue&lt;/p&gt;
+        &lt;p class="color-purple"&gt;.color-purple&lt;/p&gt;
+        &lt;p class="color-pink"&gt;.color-pink&lt;/p&gt;
+        &lt;p class="color-red"&gt;.color-red&lt;/p&gt;
+        &lt;p class="color-orange"&gt;.color-orange&lt;/p&gt;
+        &lt;p class="color-yellow"&gt;.color-yellow&lt;/p&gt;
+        &lt;p class="color-gold"&gt;<div class="color-gold"></div>&lt;/p&gt;
+        &lt;p class="color-teal"&gt;.color-teal&lt;/p&gt;
+        &lt;p class="color-green"&gt;.color-green&lt;/p&gt;
+        &lt;p class="color-accent"&gt;.color-accent&lt;/p&gt;
+        &lt;p class="color-white bg-black"&gt;.color-white&lt;/p&gt;
+    &lt;/section&gt;    
+&lt;/body&gt;
+                    </code>
+                </pre>                   
+
+<!-- No Print  -->
+                <section class="styling" id="styling-noprint">
+                    <h3>No-print</h3>
+                    <p>The <span class="utility-code color-pink">.noPrint</span> class is used to hide an element when printing web pages. Insert the <span class="utility-code color-pink">.noPrint</span> class into the element that needs to hidden at printing.</p>    
+
+                    <pre>
+                        <code class="language-html">
+&lt;body&gt;
+    &lt;p class="noPrint"&gt;Code is here&lt;/p&gt;        
+&lt;/body&gt;
+                        </code>
+                    </pre>            
+                </section>
+<!-- Icons  -->
+                <section class="styling" id="styling-icons">
+                    <h3>Icons</h3>
+                    <p>Icons from a school, education, and learning focused set can be added by copying the class code snippet and pasting where needed.</p> 
+                    <p>Add additional classes to the icon to format the color, size, placement, etc.</p>
+                    <br>
+                    <section class="sample">
+                        <section class="flexbox-sample-1">
+                            <section class="flexbox-inner-sample-1">
+                                <h2>Icons</h2>
+                                <section class="icons">
+                                    <div class="container p-3">
+                                        <div class="row">
+                                            <div class="column col-3 my-4 text-center">     
+                                                <i class="fa-solid fa-person-chalkboard color-teal fs-4"></i>
+                                                <p>Teachers</p>    
+                                            </div>
+                                            <div class="column col-3 my-4 text-center">                                 
+                                                <i class="fa-solid fa-children color-teal fs-4"></i>
+                                                <p>Students</p>
+                                            </div>
+                                            <div class="column col-3 my-4 text-center">
+                                                <i class="fa-solid fa-school-flag color-teal fs-4"></i>
+                                                <p>School Staff</p>
+                                            </div>
+                                            <div class="column col-3 my-4 text-center">
+                                                <i class="fa-solid fa-calendar color-teal fs-4"></i>
+                                                <p>Calendar</p>
+                                            </div> 
+                                        </div>
+                                        <div class="row">
+                                            <div class="column col-3 my-4 text-center">
+                                                <i class="fa-solid fa-calendar-check color-green fs-4"></i>
+                                                <p>Calendar Item</p>
+                                            </div>
+                                            <div class="column col-3 my-4 text-center">
+                                                <i class="fa-solid fa-futbol color-green fs-4"></i>                                         
+                                                <p>Sports</p>
+                                            </div>
+                                            <div class="column col-3 my-4 text-center">
+                                                <i class="fa-solid fa-masks-theater color-green fs-4"></i>
+                                                <p>Drama</p> 
+                                            </div>
+                                            <div class="column col-3 my-4 text-center">
+                                                <i class="fa-solid fa-music color-green fs-4"></i>
+                                                <p>Music</p>
+                                            </div>
+                                        </div>   
+                                        <div class="row">
+                                            <div class="column col-3 my-4 text-center">
+                                                <i class="fa-solid fa-book-open color-yellow fs-4"></i>
+                                                <p>Book</p>    
+                                            </div>
+                                            <div class="column col-3 my-4 text-center">
+                                                <i class="fa-solid fa-book-open-reader color-yellow fs-4"></i>                                             
+                                                <p>Reading</p>
+                                            </div>
+                                        
+                                            <div class="column col-3 my-4 text-center">
+                                                <i class="fa-solid fa-microscope color-yellow fs-4"></i>
+                                                <p>Science</p>
+                                            </div>
+                                            <div class="column col-3 my-4 text-center">
+                                                <i class="fa-solid fa-calculator color-yellow fs-4"></i>
+                                                <p>Calculator</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="column col-3 my-5 text-center">
+                                                <i class="fa-solid fa-laptop-code color-orange fs-4"></i>
+                                                <p>Coding</p>
+                                            </div>
+                                            <div class="column col-3 my-5 text-center">
+                                                <i class="fa-solid fa-circle-info color-orange fs-4"></i>                                                
+                                                <p>Info</p>
+                                            </div>
+                                            <div class="column col-3 my-5 text-center">
+                                                <i class="fa-solid fa-bell color-orange fs-4"></i>                                                
+                                                <p>Bell</p>
+                                            </div>
+
+                                            <div class="column col-3 my-5 text-center">
+                                                <i class="fa-solid fa-circle-question color-orange fs-4"></i>
+                                                <p>Question</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </section>
+                        </section>
+                    </section>               
+
+                    <pre>
+                        <code class="language-html">
+&lt;body&gt;
+
+    &lt;-- Example --&gt;   
+    &lt;/div&gt;  
+        &lt;i class="fa-solid fa-microscope color-yellow fs-4"&gt;Science&lt;/i&gt;
+    &lt;/div&gt;
+
+    &lt;-- Teacher --&gt;   
+    &lt;i class="fa-solid fa-person-chalkboard"&gt;Teacher&lt;/i&gt;
+
+    &lt;-- Students --&gt; 
+    &lt;i class="fa-solid fa-children"&gt;Students&lt;/i&gt;
+
+    &lt;-- School Staff --&gt;
+    &lt;i class="fa-solid fa-school-flag"&gt;School Staff&lt;/i&gt;
+
+    &lt;-- Calendar --&gt;
+    &lt;i class="fa-solid fa-calendar"&gt;Calendar&lt;/i&gt;
+
+    &lt;-- Calendar Item --&gt;
+    &lt;i class="fa-solid fa-calendar-check"&gt;Calendar Item&lt;/i&gt; 
+ 
+    &lt;-- Sports --&gt;
+    &lt;i class="fa-solid fa-fa-futbol"&gt;Sports&lt;/i&gt; 
+    
+    &lt;-- Drama --&gt;
+    &lt;i class="fa-solid fa-masks-theater"&gt;Drama&lt;/i&gt; 
+
+    &lt;-- Music --&gt;
+    &lt;i class="fa-solid fa-music"&gt;Music&lt;/i&gt;
+
+    &lt;-- Book --&gt;
+    &lt;i class="fa-solid fa-book-open"&gt;Book&lt;/i&gt; 
+
+    &lt;-- Reading  --&gt;
+    &lt;i class="fa-solid fa-book-open-reader"&gt;Reading&lt;/i&gt; 
+
+    &lt;-- Science --&gt;
+    &lt;i class="fa-solid fa-microscope"&gt;Science&lt;/i&gt; 
+
+    &lt;-- Calculator --&gt;
+    &lt;i class="fa-solid fa-calculator"&gt;Calculator&lt;/i&gt; 
+
+    &lt;-- Coding --&gt;
+    &lt;i class="fa-solid fa-laptop-code"&gt;Coding&lt;/i&gt; 
+
+    &lt;-- Info --&gt;
+    &lt;i class="fa-solid fa-circle-info"&gt;Info&lt;/i&gt;
+
+    &lt;-- Bell --&gt;
+    &lt;i class="fa-solid fa-bell"&gt;Bell&lt;/i&gt; 
+
+    &lt;-- Question --&gt;
+    &lt;i class="fa-solid fa-circle-question"&gt;Question&lt;/i&gt;
+
+&lt;/body&gt;
+                        </code>
+                    </pre>            
+                </section>
+                </section>
+            </article>
+
+            <article class="hand-up">
+                <a href="#page-top"><i class="fa-solid fa-hand-pointer"></i></a>                                
+            </article>
+            
+        </main>
+<!-- Footer  -->
+        <footer class="footer">
+            <section class="contact">
+                <section class="communication">
+                    <h2 class="footerTitle">Contact Us</h2>
+                    <ul class="commIcons">
+                        <li><a href="mailto:contact@fourschools.com"><i class="fa-regular fa-envelope"></i>contact@fourschools.com</a></li>
+                        <li><i class="fa-solid fa-phone-flip"></i>(+1)123456789</li>
+                        <li><i class="fa-solid fa-location-dot"></i> San Diego CA - USA</li>
+                    </ul>                   
+                </section>
+
+                <section class="socialMedia">
+                    <h2 class="footerTitle">Follow Us</h2>
+                    <ul class="socialIcons">
+                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </section>
+
+            </section>
+
+
+            <section class="bottom">
+                <p>&copy; Copyright 2023</p>
+                <p>Powered by For Schools</p>
+            </section>            
+        </footer>   
+
+        <!-- Script file -->
+        <script src="scripts/jquery-3.6.3.min.js"></script>
+        <script src="../scripts/prism.js"></script>
+        <script src="../scripts/script.js"></script> 
+       
+        
+    </body>
+
+
+</html>
